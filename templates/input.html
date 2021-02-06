@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html>
+<head>
+<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+		font-family: sans-serif;
+		background-image: url(https://images.pexels.com/photos/614484/pexels-photo-614484.jpeg?cs=srgb&dl=adventure-asphalt-autumn-614484.jpg&fm=jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.logg{
+		border:groove 10px;
+		color:#ff69b4;
+	}
+	.logg h1{
+		float:center;
+		font-size: 30px;
+		color:orange;
+
+	}
+	.logg h2{
+		color:#c71585;
+	}
+	</style>
+</head>
+<body >
+
+
+
+    <form action="./insert" method="post">
+        {% csrf_token %}
+<br><br><br>
+	<div class="logg">
+	<div class="log">
+	&nbsp &nbsp<center><h1>check U r  LOVE is TRUE or TIMEpass</h1></center>
+	<center>Enter U R NAME:<input type="text" placeholder="U R NAME" name="t1" required="">&nbsp &nbsp &nbsp &nbsp &nbsp
+  Enter BF/GF NAME:<input type="text" placeholder="UR GF/BF NAME" name="t2" required=""></center><br><br><center>GF/BF SwEEt NaMe:<input type="text" placeholder="NiCk Name" name="t3" required="">  &nbsp &nbsp &nbspGF/BF favourate color:<input type="text" placeholder="color" name="t4" required=""> </center><br><br><br>
+</div>
+<div class="log1">
+	<center>Tell about U r GF/BF iN oNe WoRd:<input type="te" placeholder="lovely word" name="t5" required=""></center>
+	</div>
+<br><br><br>
+  <center> <input type="submit" value="CHECK"></center>
+  <center><h2> U have one small Surprise</h2></center>
+  <!--img src="{%static "photo1.JPG"%}"alt="photo" width="200" height="200" >
+  <img src="{%static "hor4.jpg" %}" alt="photo" width="500" height="333"-->
+
+</div>
+</form>
+</body>
+</html>
